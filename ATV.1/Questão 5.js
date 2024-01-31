@@ -1,3 +1,4 @@
+
 let num1 = prompt("insira a base do triângulo")
 let num2 = prompt("Insira um lado do triângulo")
 let num3 = prompt("Insira o outro lado")
