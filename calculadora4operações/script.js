@@ -31,7 +31,7 @@ function calcularMedia (a, b)  {
   return (a + b)/2;
 }
 //função para sabe qual e maior
-function maior (a, b)  {
+function compararMaior (a, b)  {
   if (a > b) {
   return (a/2) * b;
   }
@@ -39,13 +39,13 @@ function maior (a, b)  {
   return (b/2) * a;
   }
 
-
+  
 
 }
 
-  
-  
 
+
+  
 // Função principal para realizar os cálculos e exibir os resultados na página
 
 function calcular() {
@@ -61,6 +61,6 @@ function calcular() {
   document.getElementById("cubo").innerHTML = "cubo:" + calcularCubo(numeroA, numeroB);
   document.getElementById("quadrado").innerHTML = "quadrado:" + calcularQuadrado(numeroA, numeroB);
   document.getElementById("media").innerHTML = "media:" + calcularMedia(numeroA, numeroB);
-  document.getElementById("maior").innerHTML = "metade do maior X o menor:" + maior (numeroA, numeroB);
+  document.getElementById("maior").innerHTML = "metade do maior X e menor:" + compararMaior (numeroA, numeroB);
 }
 
