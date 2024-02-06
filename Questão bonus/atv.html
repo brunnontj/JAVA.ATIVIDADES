@@ -5,38 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="atv.css">
 </head>
 <body>
     
 
     <h1>Calcular o IMC</h1>
     <form>  
-        <label for="numeroA">Número A:</label>
+        <label for="nome">seu nome</label>
+
+        <input type="text" id="nome" name="nome">
+
+        <label for="peso">peso(KG):</label>
        
-        <input type="text" id="numeroA" name="numeroA">
+        <input type="text" id="peso" name="peso">
        
 
-        <label for="numeroB">Número B:</label>
+        <label for="altura">altura(M):</label>
         
-        <input type="text" id="numeroB" name="numeroB">
+        <input type="text" id="altura" name="altura">
         
-        <button type="button" onclick="calcular()">calcular</button>
+        <button type="button" onclick="imcc()">IMC</button>
          
 
         
     
         <h2>Resultados:</h2>  
-        <p id="soma"></p>  
-        <p id="subtracao"></p> 
-        <p id="multiplicacao"></p> 
-        <p id="divisao"></p>  
-        <p id="cubo"></p> <!-- p para exibir ao cubo -->
-        <p id="quadrado"></p><!-- p para exibir ao quadrado -->
-        <p id="media"></p><!-- p para exibir a media -->
-        <p id="maior"></p><!-- p para exibir ao maior -->
-    
-    </form> <!-- Fim do formulário -->
-    <script src="../calculadora4operações/script.js"></script>
+        <p id="imc"></p>  
+           
+    </form>  
+    <script src="atv2.js"></script>
     
 </body>
 </html>
