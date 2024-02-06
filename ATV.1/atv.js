@@ -1,28 +1,23 @@
-let nota = prompt("Diga a sua nota meu nobre.");
-let conceito;
+let nota = prompt("Digite a sua nota de 0 a 100:");
 
-switch (true){
-   (case nota >= 0 && nota <= 59)
-   conceito = "F";
-   break;
-    case nota >= 60 && nota <= 69
-   conceito = "D";
-   break;
-    case nota >= 70 && nota <= 79
-   conceito = "C"
-   break;
-    case nota >= 80 && nota <= 89
-   conceito = "B";
-   break;
-    case nota >= 90 && nota <= 100
-   conceito = "A";
-   break;
-   default:
-        console.log("Nota inválida");
-        
-}
+    let conceito;
+    switch (true) {
+        case (nota >= 90 && nota <= 100):
+            conceito = "A";
+            break;
+        case (nota >= 80 && nota < 90):
+            conceito = "B";
+            break;
+        case (nota >= 70 && nota < 80):
+            conceito = "C";
+            break;
+        case (nota >= 60 && nota < 70):
+            conceito = "D";
+            break;
+        case (nota >= 0 && nota < 60):
+            conceito = "F";
+            break;
+default:
+        conceito = "Nota inexistente";
 
-if (conceito) {
-        console.log('conceito: $(conceito)');
-
-}
+    }
