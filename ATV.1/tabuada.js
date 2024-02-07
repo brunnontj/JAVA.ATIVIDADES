@@ -1,13 +1,12 @@
-let numero = prompt("Digite um número:");
+ // Solicita ao usuário que informe um número inteiro por meio de um prompt
+const num = parseInt(prompt("Informe um numero inteiro:"));w
 
-numero = parseInt(numero);
-
-if (isNaN(numero)) {
-    console.log("Por favor, insira um número válido.");
-} else {
-    console.log(Tabuada de multiplicação do número ${numero}:);
-    for (let i = 1; i <= 10; i++) {
-        let resultado = numero * i;
-        console.log(${numero} x ${i} = ${resultado});
-    }
+// Inicia um loop for, começando a partir do número informado pelo usuário
+// O loop continuará enquanto a variável 'i' for menor ou igual a 10
+for (let i = 1; i <= 10; i++) {
+  // Calcula o resultado da multiplicação do número fornecido pelo usuário com o valor atual de 'i'
+  const resultado = num * i;
+  
+  // Exibe a tabuada no formato "número x i = resultado"
+  console.log({num} * {i} = {resultado});
 }

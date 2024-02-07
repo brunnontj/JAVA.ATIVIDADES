@@ -1,0 +1,14 @@
+p {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+body {
+    background-image: url("https://t3.ftcdn.net/jpg/03/69/19/10/360_F_369191056_TPlk0bT84QAwyjsoBlUbxFxd8lWmGJWa.jpg");
+    align-content: center;
+      background-size: cover;
+}
+h1 {
+    text-align: center;
+}
